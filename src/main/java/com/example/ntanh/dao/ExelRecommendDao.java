@@ -17,7 +17,7 @@ public class ExelRecommendDao implements RecommendDao {
 	private static final int PARENT_CODE_COL = 1;
 	private static final int CHILD_CODE_COL = 2;
 	private static final int CHILD_PRI_COL = 3;
-	private static final String FILENAME = "E:\\data.xls";
+	private static final String FILENAME = "D:\\data.xls";
 	String fileName;	 
 
 	public ExelRecommendDao() {

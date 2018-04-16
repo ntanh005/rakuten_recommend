@@ -4,9 +4,9 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class Recommend {
-	String name;
-	String parent;
-	List<Recommend_Child> childs;
+	public String name;
+	public String parent;
+	public List<Recommend_Child> childs;
 
 	public Recommend(String name, String parent) {
 		this.name = name;
@@ -17,4 +17,11 @@ public class Recommend {
 	public void add(Recommend_Child child) {
 		childs.add(child);
 	}
+
+	@Override
+	public String toString() {
+		return "Recommend [code=" + parent +  "]";
+	}
+	
+	
 }
