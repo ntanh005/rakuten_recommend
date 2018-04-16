@@ -56,5 +56,15 @@ public class ExelRecommendDao implements RecommendDao {
 		} 
 		return map;
 	}
+	
+	public Object[][] getData(){
+		Map<String, Recommend> map = read();
+		Object[][] res = new Object[map.size()][1];
+		int idx = 0;
+		for(String key : map.keySet()){
+			res[idx++][0] = map.get(key);			
+		}
+		return res;
+	}
 
 }
