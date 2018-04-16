@@ -17,7 +17,7 @@ public class ExelRecommendDao implements RecommendDao {
 	private static final int PARENT_CODE_COL = 1;
 	private static final int CHILD_CODE_COL = 2;
 	private static final int CHILD_PRI_COL = 3;
-	private static final String FILENAME = "data.xls";
+	private static final String FILENAME = "E:\\data.xls";
 	String fileName;	 
 
 	public ExelRecommendDao() {
@@ -39,7 +39,7 @@ public class ExelRecommendDao implements RecommendDao {
 			String name;
 			String childCode ;
 			int priority;
-			for(int irow = 1; irow < rows; irow++){
+			for(int irow = 0; irow < rows; irow++){
 				row = sheet.getRow(irow);
 				parentCode = row.getCell(PARENT_CODE_COL).getStringCellValue();
 				name = row.getCell(NAME_COL).getStringCellValue();
@@ -52,6 +52,7 @@ public class ExelRecommendDao implements RecommendDao {
 			}
 
 		} catch (Exception e) {
+			e.printStackTrace();
 		} 
 		return map;
 	}
