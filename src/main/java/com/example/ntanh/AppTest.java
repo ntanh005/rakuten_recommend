@@ -36,7 +36,7 @@ public class AppTest {
 	// -- next
 	private static final String Submit_login_3 = "//input[@value='上記を遵守していることを確認の上、RMSを利用します']";
 	{
-		System.setProperty("webdriver.gecko.driver", "C:\\geckodriver.exe");
+		System.setProperty("webdriver.gecko.driver", "geckodriver.exe");
 	}
 	private WebDriver driver;
 	private WebDriverWait wait;
